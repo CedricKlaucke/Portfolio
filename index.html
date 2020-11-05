@@ -8,23 +8,28 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <img src="ping.png" alt="Cedric Klaucke" width="50" height="50">
-      <section class="header-right">
-        <button class="openbtn" onclick="openNav()">Menu ☰</button>
+    <section id="page-container">
+      <header>
+        <img src="ping.png" alt="Cedric Klaucke" width="40" height="40">
+        <section class="header-right">
+          <button class="openbtn" onclick="openNav()">Menu ☰</button>
+        </section>
+      </header>
+      <section id="content-wrap">
+        <section id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="index.html">Home</a>
+          <a href="curriculum vitae.html">Curriculum vitae</a>
+          <a href="p3.html">p3</a>
+        </section>
+        <section id="main">
+          <h1>Home</h1>
+          <p>Test</p>
+        </section>
       </section>
-    </header>
-    <section id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="index.html">Home</a>
-      <a href="Curriculum vitae.html">Curriculum vitae</a>
-      <a href="p3.html">p3</a>
+      <footer>
+        <p>Footer</p>
+      </footer>
     </section>
-    <section id="main">
-      <p>Curriculum Vitae</p>
-    </section>
-    <footer class="footer">
-      <p>Footer</p>
-    </footer>
   </body>
 </html>
