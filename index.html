@@ -5,30 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <div class="navbar" id="mynavbar">
-      <a href="index.html" class="active">Home</a>
-      <a href="curriculum vitae.html">Curriculum Vitae</a>
+    <header class="header">
+      <img src="ping.png" alt="Cedric Klaucke" width="50" height="50">
+      <section class="header-right">
+        <button class="openbtn" onclick="openNav()">Menu ☰</button>
+      </section>
+    </header>
+    <section id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="Curriculum vitae.html">Curriculum vitae</a>
       <a href="p3.html">p3</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <script>
-    function myFunction() {
-      var x = document.getElementById("mynavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-    </script>
-    <div class="main">
-      <h1>Home</h1>
-      <p>Paragraph.</p>
-    </div>
+    </section>
+    <section id="main">
+      <p>Curriculum Vitae</p>
+    </section>
+    <footer class="footer">
+      <p>Footer</p>
+    </footer>
   </body>
 </html>
