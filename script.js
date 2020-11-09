@@ -1,7 +1,11 @@
 // code for the sidebar
+const mediaQuery = window.matchMedia('(min-width: 600px)')
+
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("content-wrap").style.marginRight = "250px";
+  if (mediaQuery.matches) {
+    document.getElementById("content-wrap").style.marginRight = "250px";
+  }
 }
 
 function closeNav() {
