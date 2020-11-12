@@ -1,21 +1,21 @@
 // code for the sidebar
-const mediaQuery = window.matchMedia('(min-width: 600px)')
+const mediaQuery = window.matchMedia('(min-width: 800px)')
 
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("side-menu").style.width = "200px";
   if (mediaQuery.matches) {
-    document.getElementById("content-wrap").style.marginRight = "250px";
+    document.getElementById("content-wrap").style.marginRight = "200px";
   }
 }
 
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("side-menu").style.width = "0";
   document.getElementById("content-wrap").style.marginRight= "0";
 }
 
 // code for the dropdown
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("lang-dropdown").classList.toggle("show");
 }
 
 window.onclick = function(event) {
