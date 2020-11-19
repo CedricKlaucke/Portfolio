@@ -17,6 +17,13 @@ header {
   overflow: visible;
 }
 
+main {
+  padding: 16px;
+  padding-bottom: 50px;
+  padding-top: 75px;
+  transition: margin-right .5s;
+}
+
 /* footer {
   position: fixed;
   bottom: 0;
@@ -35,13 +42,6 @@ h1 {
 h2 {
   font-size: 20px;
   text-align: center;
-}
-
-#content-wrap {
-  padding: 16px;
-  padding-bottom: 50px;
-  padding-top: 75px;
-  transition: margin-right .5s;
 }
 
 /* code for tables */
@@ -246,9 +246,9 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 600px) {
   .foto-name {
-    height: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .text-left {
     width: 100%;
