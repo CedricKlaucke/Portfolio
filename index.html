@@ -12,7 +12,7 @@
       <img src="img/name.png" alt="Cedric Klaucke" class="foto-name">
       <nav class="header-right">
         <section class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">NL 🇳🇱</button>
+          <button onclick="langDropdownbtn()" class="dropbtn">NL 🇳🇱</button>
           <section id="lang-dropdown" class="dropdown-content">
             <a href="index.html">NL 🇳🇱</a>
             <a href="english/index.html">EN 🇬🇧</a>
@@ -22,10 +22,18 @@
       </nav>
     </header>
     <section id="side-menu" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
       <a href="index.html">Home</a>
       <a href="over mij.html">Over mij</a>
       <a href="mijn cv.html">Mijn CV</a>
+      <button onclick="sideDropdownbtn()" class="dropdown-btn">School
+        <b class="down-arrow">⮟</b>
+      </button>
+      <section id="side-dropdown" class="dropdown-container">
+        <a href="" target="_blank">Project Reserveren</a>
+        <a href="">Test</a>
+        <a href="">Test</a>
+      </section>
       <a href="contact.html">Contact</a>
     </section>
     <main id="content-wrap">
@@ -35,21 +43,21 @@
       </section>
       <section class="text-center">
         <h2>Op deze pagina's vind je;</h2>
-        <table id="t01">
-          <tr>
-            <td>Over mij</td>
-            <td>Geeft je meer informatie over mijn hobby's en interesses</td>
-          </tr>
-          <tr>
-            <td>Mijn CV</td>
-            <td>Gaat over wat voor opleidingen ik heb gedaan en wat voor werkervaring ik heb</td>
-          </tr>
-          <tr>
-            <td>Contact</td>
-            <td>Hier kan je je bericht achterlaten als je met mij in contact wilt komen</td>
-          </tr>
-        </table>
       </section>
+      <table id="t01">
+        <tr>
+          <td>Over mij</td>
+          <td>Geeft je meer informatie over mijn hobby's en interesses</td>
+        </tr>
+        <tr>
+          <td>Mijn CV</td>
+          <td>Gaat over wat voor opleidingen ik heb gedaan en wat voor werkervaring ik heb</td>
+        </tr>
+        <tr>
+          <td>Contact</td>
+          <td>Hier kan je je bericht achterlaten als je met mij in contact wilt komen</td>
+        </tr>
+      </table>
     </main>
   </body>
 </html>
