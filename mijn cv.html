@@ -5,47 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js"></script> <!-- js zodat de dropdown en sidemenu werken //-->
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <img src="img/name.png" alt="Cedric Klaucke" class="foto-name">
       <nav class="header-right">
-        <section class="dropdown">
+        <!-- Language dropdown -->
+        <div class="dropdown">
           <button onclick="langDropdownbtn()" class="dropbtn">NL 🇳🇱</button>
-          <section id="lang-dropdown" class="dropdown-content">
+          <div id="lang-dropdown" class="dropdown-content">
             <a href="mijn cv.html">NL 🇳🇱</a>
             <a href="english/mijn cv.html">EN 🇬🇧</a>
-          </section>
-        </section>
+          </div>
+        </div> <!-- End language dropdown -->
         <button class="openbtn" onclick="openNav()">Menu ☰</button>
       </nav>
     </header>
-    <section id="side-menu" class="sidebar">
+    <!-- Sidemenu -->
+    <div id="sideMenu" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="index.html">Home</a>
       <a href="over mij.html">Over mij</a>
       <a href="mijn cv.html">Mijn CV</a>
+      <!-- Sidemenu dropdown-->
       <button onclick="sideDropdownbtn()" class="dropdown-btn">School
         <b class="down-arrow">⮟</b>
       </button>
-      <section id="side-dropdown" class="dropdown-container">
-        <a href="">Project Reserveren</a>
-        <a href="">Test</a>
-        <a href="">Test</a>
-      </section>
+      <div id="side-dropdown" class="dropdown-container">
+        <a href="reserveren/index.html" target="_blank">Project Reserveren</a>
+      </div> <!-- End sidemenu dropdown -->
       <a href="contact.html">Contact</a>
-    </section>
+    </div> <!-- End sidemenu -->
+    <!-- Main page -->
     <main id="content-wrap">
-      <section class="text-center">
+      <div class="text-center">
         <h1>Mijn CV</h1>
         <p>Ik heb meerdere opleidingen gedaan en op verschillende plekken gewerkt</p>
-      </section>
-      <section class="text-center">
-        <h1>Competenties</h1>
-        <p>Ik ben een rustig iemand, zelfstandig, maar vind het ook leuk om samen met anderen te werken.</p>
-      </section>
-      <section class="text-table">
+      </div>
+      <div class="text-table">
         <h1>Schoolstages</h1>
         <table>
           <tr>
@@ -65,8 +63,8 @@
             <td>Hulp</td>
           </tr>
         </table>
-      </section>
-      <section class="text-table">
+      </div>
+      <div class="text-table">
         <h1>Werk</h1>
         <table>
           <tr>
@@ -95,8 +93,8 @@
             <td>Oktober 2018 - Maart 2019</td>
           </tr>
         </table>
-      </section>
-      <section class="text-table">
+      </div>
+      <div class="text-table">
         <h1>Opleidingen</h1>
         <table>
           <tr>
@@ -125,8 +123,8 @@
             <td>2020 - 2024</td>
           </tr>
         </table>
-      </section>
-      <section class="text-table">
+      </div>
+      <div class="text-table">
         <h1>Diploma's</h1>
         <table>
           <tr>
@@ -142,7 +140,7 @@
             <td></td>
           </tr>
         </table>
-      </section>
-    </main>
+      </div>
+    </main> <!-- End main page -->
   </body>
 </html>

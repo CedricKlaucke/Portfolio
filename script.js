@@ -1,19 +1,19 @@
-// code for the sidebar
+// Opens and closes the sidemenu
 const mediaQuery = window.matchMedia('(min-width: 800px)')
 
 function openNav() {
-  document.getElementById("side-menu").style.width = "200px";
+  document.getElementById("sideMenu").style.width = "200px";
   if (mediaQuery.matches) {
     document.getElementById("content-wrap").style.marginRight = "200px";
   }
 }
 
 function closeNav() {
-  document.getElementById("side-menu").style.width = "0";
+  document.getElementById("sideMenu").style.width = "0";
   document.getElementById("content-wrap").style.marginRight= "0";
 }
 
-// code for the language dropdown
+// Opens and closes the language dropdown
 function langDropdownbtn() {
   document.getElementById("lang-dropdown").classList.toggle("show");
 }
@@ -31,12 +31,13 @@ window.addEventListener("click", function(event) {
   }
 });
 
-// code for the sidemenu dropdown
+// Opens and closes the sidemenu dropdown
 function sideDropdownbtn() {
   document.getElementById("side-dropdown").classList.toggle("show");
 }
 
 window.addEventListener("click", function(event) {
+  this.classList.toggle("active");
   if (!event.target.matches('.dropdown-btn')) {
     var dropdowns = document.getElementsByClassName("side-dropdown");
     var i;

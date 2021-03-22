@@ -5,45 +5,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js"></script> <!-- js zodat de dropdown en sidemenu werken //-->
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <img src="img/name.png" alt="Cedric Klaucke" class="foto-name">
       <nav class="header-right">
-        <section class="dropdown">
+        <!-- Language dropdown -->
+        <div class="dropdown">
           <button onclick="langDropdownbtn()" class="dropbtn">NL 🇳🇱</button>
-          <section id="lang-dropdown" class="dropdown-content">
+          <div id="lang-dropdown" class="dropdown-content">
             <a href="index.html">NL 🇳🇱</a>
             <a href="english/index.html">EN 🇬🇧</a>
-          </section>
-        </section>
+          </div>
+        </div> <!-- End language dropdown -->
         <button class="openbtn" onclick="openNav()">Menu ☰</button>
       </nav>
     </header>
-    <section id="side-menu" class="sidebar">
+    <!-- Sidemenu -->
+    <div id="sideMenu" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
       <a href="index.html">Home</a>
       <a href="over mij.html">Over mij</a>
       <a href="mijn cv.html">Mijn CV</a>
+      <!-- Sidemenu dropdown -->
       <button onclick="sideDropdownbtn()" class="dropdown-btn">School
         <b class="down-arrow">⮟</b>
       </button>
-      <section id="side-dropdown" class="dropdown-container">
-        <a href="" target="_blank">Project Reserveren</a>
-        <a href="">Test</a>
-        <a href="">Test</a>
-      </section>
+      <div id="side-dropdown" class="dropdown-container">
+        <a href="reserveren/index.html" target="_blank">Project Reserveren</a>
+      </div> <!-- End sidemenu dropdown -->
       <a href="contact.html">Contact</a>
-    </section>
+    </div> <!-- End sidemenu -->
+    <!-- Main page -->
     <main id="content-wrap">
-      <section class="text-center">
+      <div class="text-center">
         <h1>Home</h1>
         <p>Welkom op mijn website. Hier kan je informatie vinden over wie ik ben en wat ik doe.</p>
-      </section>
-      <section class="text-center">
+      </div>
+      <div class="text-center">
         <h2>Op deze pagina's vind je;</h2>
-      </section>
+      </div>
       <table id="t01">
         <tr>
           <td>Over mij</td>
@@ -58,6 +60,6 @@
           <td>Hier kan je je bericht achterlaten als je met mij in contact wilt komen</td>
         </tr>
       </table>
-    </main>
+    </main> <!-- End main page -->
   </body>
 </html>

@@ -5,82 +5,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js"></script> <!-- js zodat de dropdown en sidemenu werken //-->
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <img src="img/name.png" alt="Cedric Klaucke" class="foto-name">
       <nav class="header-right">
-        <section class="dropdown">
-          <button onclick="langDropdownbtn()" class="dropbtn">NL 🇳🇱</button>
-          <section id="lang-dropdown" class="dropdown-content">
+        <!-- Language dropdown -->
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">NL 🇳🇱</button>
+          <div id="lang-dropdown" class="dropdown-content">
             <a href="over mij.html">NL 🇳🇱</a>
             <a href="english/over mij.html">EN 🇬🇧</a>
-          </section>
-        </section>
+          </div>
+        </div> <!-- End language dropdown -->
         <button class="openbtn" onclick="openNav()">Menu ☰</button>
       </nav>
     </header>
-    <section id="side-menu" class="sidebar">
+    <!-- Sidemenu -->
+    <div id="sideMenu" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="index.html">Home</a>
       <a href="over mij.html">Over mij</a>
       <a href="mijn cv.html">Mijn CV</a>
+      <!-- Sidemenu dropdown -->
       <button onclick="sideDropdownbtn()" class="dropdown-btn">School
         <b class="down-arrow">⮟</b>
       </button>
-      <section id="side-dropdown" class="dropdown-container">
-        <a href="">Project Reserveren</a>
-        <a href="">Test</a>
-        <a href="">Test</a>
-      </section>
+      <div id="side-dropdown" class="dropdown-container">
+        <a href="reserveren/index.html" target="_blank">Project Reserveren</a>
+      </div> <!-- End sidemenu dropdown -->
       <a href="contact.html">Contact</a>
-    </section>
+    </div> <!-- End sidemenu -->
+    <!-- Main page -->
     <main id="content-wrap">
-      <section class="text-center-small">
+      <div class="text-center-small">
         <h1>Over mij</h1>
         <p>Ik heb een paar leuke hobby's en interesses, waarover ik hieronder meer vertel</p>
-      </section>
-      <section class="foto-right">
+      </div>
+      <div class="foto-right">
         <img src="img/gamen.jpeg" alt="foto" class="responsive">
-      </section>
-      <section class="text-left">
+      </div>
+      <div class="text-left">
         <h2>Gamen</h2>
         <p>Een van mijn favoriete hobby's is gamen.</p>
         <p>Het spel dat ik het meeste speel is World of Warcraft, ik speel daarbij ook in een groep van 20 mensen waarmee ik 3 keer in de week op vaste tijden game</p>
-      </section>
-      <section class="foto-left">
+      </div>
+      <div class="foto-left">
         <img src="img/festival.jpg" alt="foto" class="responsive">
-      </section>
-      <section class="text-right">
+      </div>
+      <div class="text-right">
         <h2>Festivals</h2>
         <p>Ik ga graag naar festivals en feesten, vooral hardstyle maar ook drum&bass en metal.</p>
         <p>Mij favoriete festivals/feesten zijn Defqon.1, Supremacy en Let it Roll.</p>
-      </section>
-      <section class="foto-right">
+      </div>
+      <div class="foto-right">
         <img src="img/skate.jpg" alt="foto" class="responsive">
-      </section>
-      <section class="text-left">
+      </div>
+      <div class="text-left">
         <h2>Skateboarden</h2>
         <p>Ik skate al vanaf mij 14de, vaak doe ik dit met een vriendengroep.</p>
         <p>Meestal skaten wij in een skatepark en soms ook op straat.</p>
-      </section>
-      <section class="foto-left">
+      </div>
+      <div class="foto-left">
         <img src="img/boulder.png" alt="foto" class="responsive">
-      </section>
-      <section class="text-right">
+      </div>
+      <div class="text-right">
         <h2>Boulderen</h2>
         <p>Een andere hobby is boulderen.</p>
         <p>Dit is het klimmen van een korte route op een vaak dicht bij de grond gelegen echte of kunstmatige rots (ook wel een boulder genoemd) zonder het gebruik van een touw of andere vorm van zekering.<br>Af en toe ga ik ook klimmen met een touw (topropen, lead climbing).</p>
-      </section>
-      <section class="foto-right">
+      </div>
+      <div class="foto-right">
         <img src="img/airsoft.png" alt="foto" class="responsive">
-      </section>
-      <section class="text-left">
+      </div>
+      <div class="text-left">
         <h2>Airsoft</h2>
         <p>Sinds kort ben ik samen met een vriend ook begonnen aan airsoft.</p>
         <p>Airsoft is een schietsport die op verschillende manieren gespeeld kan worden. Door het afschieten van biologisch afbreekbare kleine balletjes (BB’s) probeer je doelwitten te raken en/of tegenstanders uit te schakelen.</p>
-      </section>
-    </main>
+      </div>
+    </main> <!-- End main page -->
   </body>
 </html>
