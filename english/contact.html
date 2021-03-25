@@ -11,28 +11,39 @@
     <header>
       <img src="../img/name.png" alt="Cedric Klaucke" class="foto-name">
       <nav class="header-right">
-        <section class="dropdown">
+        <!-- Language dropdown -->
+        <div class="dropdown">
           <button onclick="langDropdownbtn()" class="dropbtn">EN 🇬🇧</button>
-          <section id="lang-dropdown" class="dropdown-content">
+          <div id="lang-dropdown" class="dropdown-content">
             <a href="../contact.html">NL 🇳🇱</a>
             <a href="contact.html">EN 🇬🇧</a>
-          </section>
-        </section>
+          </div>
+        </div> <!-- End language dropdown -->
         <button class="openbtn" onclick="openNav()">Menu ☰</button>
       </nav>
     </header>
-    <section id="side-menu" class="sidebar">
+    <!-- Sidemenu -->
+    <div id="sideMenu" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="index.html">Home</a>
       <a href="over mij.html">About me</a>
       <a href="mijn cv.html">My CV</a>
+      <!-- Sidemenu dropdown -->
+      <button onclick="sideDropdownbtn()" class="dropdown-btn">School
+        <b class="down-arrow">⮟</b>
+      </button>
+      <div id="side-dropdown" class="dropdown-container">
+        <a href="https://reserveren.cedricklaucke.nl/" target="_blank">Project Reservation</a>
+        <a href="database.html">Database</a>
+      </div> <!-- End sidemenu dropdown -->
       <a href="contact.html">Contact</a>
-    </section>
+    </div> <!-- End sidemenu -->
+    <!-- Main page -->
     <main id="content-wrap">
-      <section class="text-center">
+      <div class="text-center">
         <h1>Contact</h1>
         <p></p>
-      </section>
-    </main>
+      </div>
+    </main> <!-- End main page -->
   </body>
 </html>
