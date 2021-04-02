@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Cedric Klaucke</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="img/name.png" alt="Cedric Klaucke" class="foto-name">
+      <nav class="header-right">
+        <!-- Language dropdown -->
+        <div class="dropdown">
+          <button onclick="langDropdownbtn()" class="dropbtn">NL 🇳🇱</button>
+          <div id="lang-dropdown" class="dropdown-content">
+            <a href="index.html">NL 🇳🇱</a>
+            <a href="english/index.html">EN 🇬🇧</a>
+          </div>
+        </div> <!-- End language dropdown -->
+        <button class="openbtn" onclick="openNav()">Menu ☰</button>
+      </nav>
+    </header>
+    <!-- Sidemenu -->
+    <div id="sideMenu" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+      <a href="index.html">Home</a>
+      <a href="over mij.html">Over mij</a>
+      <a href="mijn cv.html">Mijn CV</a>
+      <!-- Sidemenu dropdown -->
+      <button onclick="sideDropdownbtn()" class="dropdown-btn">School
+        <b class="down-arrow">⮟</b>
+      </button>
+      <div id="side-dropdown" class="dropdown-container">
+        <a href="https://reserveren.cedricklaucke.nl/" target="_blank">Project Reserveren</a>
+        <a href="databases.html">Database</a>
+      </div> <!-- End sidemenu dropdown -->
+      <a href="contact.html">Contact</a>
+    </div> <!-- End sidemenu -->
+    <!-- Main page -->
+    <main id="content-wrap">
+      <div class="text-center">
+        <h1>Databases</h1>
+        <p>Deze pagina is nog in onderhoud</p>
+      </div>
+      <!-- Start boxes -->
+      <button type="button" class="databases-box">Opdracht 03</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM weborder</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 04</button>
+      <div class="databases-content">
+        <p>SELECT artiest, title, genre</p>
+        <p>FROM album</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 05</button>
+      <div class="databases-content">
+        <p>SELECT voornaam, achternaam, straat</p>
+        <p>FROM klant</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 06</button>
+      <div class="databases-content">
+        <p>SELECT artiest, titel, genre, prijs</p>
+        <p>FROM album</p>
+        <p>ORDER BY artiest</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 07</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p>ORDER BY titel</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 08</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p>ORDER BY titel DESC</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 09</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM klant</p>
+        <p>WHERE woonplaats = 'Amsterdam'</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 10</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p>WHERE genra = 'Latin'</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 11</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p></p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 12</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p>WHERE prijs</p>
+        <p>BETWEEN '3.00' AND '4.00'</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 13</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p>WHERE prijs</p>
+        <p>BETWEEN '3.00' AND '4.00' LIMIT 5</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 14</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM weborder LIMIT 3</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 15</button>
+      <div class="databases-content">
+        <p>SELECT DISTINCT weborder_ID</p>
+        <p>FROM item</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 16</button>
+      <div class="databases-content">
+        <p>SELECT DISTINCT album_ID</p>
+        <p>FROM item</p>
+        <p></p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 17</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p>WHERE artiest LIKE "%to%"</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 18</button>
+      <div class="databases-content">
+        <p>SELECT *</p>
+        <p>FROM album</p>
+        <p>WHERE titel LIKE "%girl%"</p>
+      </div>
+      <button type="button" class="databases-box">Opdracht 19</button>
+      <div class="databases-content">
+        <p>UPDATE klant</p>
+        <p>SET straat = "Galileiplantsoen 111", postcode = "1010RR"</p>
+        <p>WHERE klant.ID = 5</p>
+      </div> <!-- End boxes -->
+    </main> <!-- End main page -->
+  </body>
+</html>

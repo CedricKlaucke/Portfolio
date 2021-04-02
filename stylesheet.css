@@ -45,6 +45,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 15px;
+}
+
 /* code for tables */
 #t01 tr:nth-child(even) {
   background-color: #ddd;
@@ -69,6 +73,38 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #888;
+}
+
+/* code for the databases boxes */
+.databases-boxes {
+  width: 100%;
+}
+
+.databases-box {
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 33%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.active, .databases-box:hover {
+  background-color: #444;
+}
+
+.databases-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-bottom: 5px;
+  border-radius: 15px;
 }
 
 /* code for the language dropdown */
